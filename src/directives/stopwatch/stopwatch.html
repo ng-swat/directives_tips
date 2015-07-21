@@ -1,0 +1,61 @@
+<div>
+
+  <div class="lead">
+    {{stopWatch.elapsedTime | date:'mm:ss'}}
+  </div>
+
+  <div class="btn-group">
+    <button type="button"
+            ng-click="stopWatch.start()"
+            class="btn btn-default">
+      <span class="glyphicon glyphicon-play"></span>
+    </button>
+
+    <button type="button"
+            ng-click="stopWatch.stop()"
+            class="btn btn-default">
+      <span class="glyphicon glyphicon-stop"></span>
+    </button>
+
+    <button type="button"
+            ng-click="stopWatch.reset()"
+            class="btn btn-default">
+      <span class="glyphicon glyphicon-refresh"></span>
+    </button>
+  </div>
+  <div id="stopWatch">
+  <div class="container">
+
+
+    <ul class="flip minutePlay">
+      <li>
+        <a href="#">
+          <div class="up">
+            <div class="shadow"></div>
+            <div class="inn" ng-bind="stopWatch.minute"></div>
+          </div>
+          <div class="down">
+            <div class="shadow"></div>
+            <div class="inn" ng-bind="stopWatch.minute"></div>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <ul class="flip secondPlay">
+      <li>
+        <a href="#">
+          <div class="up">
+            <div class="shadow"></div>
+            <div class="inn" ng-bind="stopWatch.second"></div>
+          </div>
+          <div class="down">
+            <div class="shadow"></div>
+            <div class="inn" ng-bind="stopWatch.second"></div>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+  </div>
+</div>
