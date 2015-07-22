@@ -1,4 +1,3 @@
-import jQuery    from 'jquery';
 import angular   from 'angular';
 import style     from 'index.less'
 
@@ -8,8 +7,8 @@ import dummy     from 'directives/dummy/dummy';
 import nkClick   from 'lib/ngClick-dcorator';
 
 angular.module('directives.tips', [
-  dummy.name,
-  nkLogin.name,
+  dummy.name
+  //nkLogin.name
   //stopWatch.name,
   //nkClick.name
 ])
