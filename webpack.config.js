@@ -16,7 +16,7 @@ module.exports = {
       { test: /\.js$/, exclude: /node_modules/, loader:"babel" },
       { test: /\.less$/, loader: "style!css!less"},
 
-      // support Jsob importing
+      // support Json importing
       { test: /\.json$/, loader: "json" },
 
       // load raw html files
@@ -24,9 +24,7 @@ module.exports = {
 
       // load fonts and images
       { test: /\.(ttf|eot|svg|otf)$/, loader: "file" },
-      { test: /\.woff(2)?$/, loader: "url?limit=10000&minetype=application/font-woff"},
-
-      { test: /jquery\.js$/, loader: 'expose?$' }
+      { test: /\.woff(2)?$/, loader: "url?limit=10000&minetype=application/font-woff"}
     ]
   },
 
