@@ -1,9 +1,3 @@
-/**
- * directive execution order demo
- * logs on each step
- *
- * @returns {{controller, compile: Function}}
- */
 function dummyDirective() {
   return {
     controller: dummyController,
@@ -22,7 +16,6 @@ class dummyController {
   constructor() {
     console.log('dummy Controller executed!');
   }
-
 }
 
 export default angular.module('directives.dummy', [])

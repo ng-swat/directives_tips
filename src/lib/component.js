@@ -12,7 +12,6 @@ class Component {
   _extractAlias(controllerFn) {
     return controllerFn.name.split('Controller')[0];
   }
-
 }
 
 export default Component;
