@@ -1,3 +1,13 @@
-## run npm start and navigate to localhost:8080
+# AngularJS Directives Tips and Conventions 
 
-refernce code for the AngularJS-IL meetup event that took place on Jun 22th @Google Campus
+
+How to run this project?
+------------------------
+-  clone the project.
+-  run `npm start`. (it will install all the require dependencies and start webpack server)
+-  navigte to `localhost:8080`.
+
+### Please Note!
+
+The source code contais a lot of comments that exaplians the concepts. If you find somthing missing, PR are more then welcome.
+I will publish the link for the slides soon.

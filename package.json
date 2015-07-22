@@ -44,6 +44,6 @@
   "dependencies": {
     "angular": "1.4.1",
     "bootstrap": "3.3.5",
-    "expose-loader": "^0.7.0"
+    "expose-loader": "0.7.0"
   }
 }

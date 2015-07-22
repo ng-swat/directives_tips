@@ -2,6 +2,14 @@ import stopWatchTemplate from 'directives/stopwatch/stopwatch.html';
 import stopWatchStyle    from 'directives/stopwatch/stopwatch.less';
 import stopWatchConfig   from 'directives/stopwatch/stopwatch.json';
 
+/**
+ * the directive factory function that return
+ * the Directive definition object (DDO).
+ * note! this directive import a JSON configuration file
+ * and use it to initialize the controls attribute
+ *
+ * @returns {{restrict: string, template, controller, controllerAs: string}}
+ */
 function stopWatchDirective() {
   return {
     restrict: 'E',
@@ -11,6 +19,9 @@ function stopWatchDirective() {
   };
 }
 
+/**
+ * the stopwatch business logic.
+ */
 class StopWatchController{
 
   constructor($interval) {
@@ -63,5 +74,8 @@ class StopWatchController{
   }
 }
 
+/**
+ * register the directive on a module
+ */
 export default angular.module('directives.stopWatch', [])
   .directive('stopWatch', stopWatchDirective);
