@@ -1,7 +1,6 @@
 class Component {
 
   constructor(controllerFn, template, props= {}) {
-    debugger;
     this.controller       = controllerFn;
     this.template         = template;
     this.scope            = props;

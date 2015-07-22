@@ -1,5 +1,4 @@
 import nkLoginTemplate from 'directives/nk-login/nk-login.html';
-import nkLoginStyle    from 'directives/nk-login/nk-login.less';
 
 function nkLoginDirective() {
   return {

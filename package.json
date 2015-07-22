@@ -4,6 +4,7 @@
   "description": "reference code for the AngularJS-IL meetup talk",
   "main": "index.js",
   "scripts": {
+    "prestart": "npm install",
     "start": "node_modules/.bin/webpack-dev-server",
     "bundle": "cp src/index.html dist/ & node_modules/.bin/webpack -p ./dist/bundle.js"
   },

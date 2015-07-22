@@ -1,19 +1,21 @@
 import stopWatchTemplate from 'directives/stopwatch/stopwatch.html';
 import stopWatchStyle    from 'directives/stopwatch/stopwatch.less';
+import stopWatchConfig   from 'directives/stopwatch/stopwatch.json';
 
 function stopWatchDirective() {
   return {
     restrict: 'E',
     template: stopWatchTemplate,
     controller: StopWatchController,
-    controllerAs: 'stopWatch'
+    controllerAs: 'StopWatch'
   };
 }
 
-class StopWatchController {
+class StopWatchController{
 
   constructor($interval) {
     this.$interval   = $interval;
+    this.controls    = stopWatchConfig.controls;
     this.startTime   = 0;
     this.offset      = 0;
     this.second      = 0;
