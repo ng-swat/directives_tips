@@ -4,7 +4,8 @@
 How to run this project?
 ------------------------
 -  clone the project.
--  run `npm start`. (it will install all the require dependencies and start webpack server)
+-  CD to the project root folder
+-  run `npm start`. (it should install all the require dependencies and start webpack server)
 -  navigte to `localhost:8080`.
 
 ### Read the comments!
